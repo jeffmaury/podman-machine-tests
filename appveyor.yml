@@ -5,4 +5,5 @@ version: 1.0.{build}
 build_script:
 
 - ps: Invoke-WebRequest -Uri https://github.com/ovh/venom/releases/download/v1.1.0/venom.windows-amd64 -OutFile venom.exe
+- cmd: venom version
 
