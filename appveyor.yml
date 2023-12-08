@@ -9,4 +9,4 @@ build_script:
 - cmd: podman -v
 
 test_script:
-- cmd: venom run test1.yml
+- cmd: venom run -v test1.yml
