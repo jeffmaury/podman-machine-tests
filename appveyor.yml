@@ -8,4 +8,4 @@ build_script:
 - cmd: choco install podman-cli
 
 test_script:
-- cmd: venom test1.yml
+- cmd: venom run test1.yml
