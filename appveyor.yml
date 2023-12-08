@@ -6,6 +6,7 @@ build_script:
 
 - ps: Invoke-WebRequest -Uri https://github.com/ovh/venom/releases/download/v1.1.0/venom.windows-amd64 -OutFile venom.exe
 - cmd: choco install podman-cli
+- cmd: podman -v
 
 test_script:
 - cmd: venom run test1.yml
