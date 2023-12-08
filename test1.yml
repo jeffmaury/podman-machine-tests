@@ -1,0 +1,16 @@
+name: Default podman machine test
+testcases:
+- name: Create machine
+  steps:
+  - type: exec
+    script: podman machine init
+    assertions:
+    - result.code ShouldEqual 0
+
+- name: Start machine
+  steps:
+  - type: exec
+    script: podman machine start
+    assertions:
+    - result.code ShouldEqual 0
+
