@@ -7,7 +7,7 @@ image: Visual Studio 2019
 build_script:
 
 - ps: Invoke-WebRequest -Uri https://github.com/ovh/venom/releases/download/v1.1.0/venom.windows-amd64 -OutFile venom.exe
-- cmd: wsl --update
+- cmd: wsl
 - cmd: choco install podman-cli
 - cmd: podman -v
 - cmd: podman machine init
